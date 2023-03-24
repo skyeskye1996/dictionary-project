@@ -23,13 +23,10 @@ function Dictionary(props) {
 
     axios.get(apiUrl).then(handleDictionaryResponse);
 
-    const pexelsApiKey =
-      "563492ad6f9170000100000169f5ff282def4fcf9d4c72ab7dd1e6fa";
-
+    let pexelsApiKey =
+      "s6pLzD2yFuwYXahRsYL6SstQ5B4fhcwJYPAQbN6pAjxcwZWvIn34c6G5";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
