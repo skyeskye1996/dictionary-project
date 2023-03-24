@@ -23,8 +23,7 @@ function Dictionary(props) {
 
     axios.get(apiUrl).then(handleDictionaryResponse);
 
-    let pexelsApiKey =
-      "s6pLzD2yFuwYXahRsYL6SstQ5B4fhcwJYPAQbN6pAjxcwZWvIn34c6G5";
+    let pexelsApiKey ="s6pLzD2yFuwYXahRsYL6SstQ5B4fhcwJYPAQbN6pAjxcwZWvIn34c6G5";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
