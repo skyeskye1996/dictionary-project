@@ -1,2 +1,30 @@
-.Dictionary {
-}
+.Dictionary h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .Dictionary form {
+    background: #d9f2ff;
+    border:none; 
+  }
+  
+  .Dictionary form input {
+    background: #a5bdfd;
+    color: #fff;
+  }
+  
+  .Dictionary section {
+    background: #d9f2ff;
+    box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    margin: 20px 10px;
+  }
+  
+  .Dictionary input {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    padding: 5px 4px;
+  }

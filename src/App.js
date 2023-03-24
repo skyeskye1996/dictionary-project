@@ -1,21 +1,23 @@
-import logo from "./logo.png";
 import "./App.css";
 import Dictionary from "./Dictionary";
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <img src={logo} className="App-logo img-fluid" alt="logo" />
-        </header>
         <main>
-          <Dictionary />
+          <h1 className="text-center pt-2">Dictionary</h1>
+          <Dictionary defaultKeyword="Brave" />
         </main>
-        <footer className="App-footer">
-          <small>Coded by SheCodes</small>
+        <footer className="text-center pb-5">
+          <a href="https://github.com/skyeskye1996/dictionary-project">
+            Open-source
+          </a>{" "}
+          and coded by Skye
         </footer>
       </div>
     </div>
   );
 }
+
+export default App;
